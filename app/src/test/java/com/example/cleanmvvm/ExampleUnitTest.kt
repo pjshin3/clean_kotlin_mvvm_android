@@ -12,6 +12,15 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        assertEquals(listOf(6).result(), true)
     }
+
+    private fun List<Int>.result() = this
+        .map(::doSomeThing1)
+        .filter(::doSomeThing2)
+        .map { "result is not empty  $it" }
+        .isNotEmpty()
+
+    private fun doSomeThing1(tmp: Int) : Int = tmp.div(2)
+    private fun doSomeThing2(tmp: Int) : Boolean = tmp % 2 == 1
 }

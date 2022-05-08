@@ -7,8 +7,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.example.cleanmvvm"
@@ -55,7 +54,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    testImplementation "org.koin:koin-test:$koin"
+    //testImplementation "org.koin:koin-test:$koin"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junit"
     testImplementation "org.junit.jupiter:junit-jupiter-engine:$junit"
     testImplementation "org.junit.jupiter:junit-jupiter-params:$junit"

@@ -4,15 +4,14 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
-import com.example.clean_kotlin_mvvm.view.MainView
+import com.example.clean_kotlin_mvvm.view.HelloWorldText
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val view = MainView()
         setContent {
             MaterialTheme {
-                view.HelloWorldText()
+                HelloWorldText()
             }
         }
     }

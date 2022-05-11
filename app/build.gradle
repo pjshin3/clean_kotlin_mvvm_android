@@ -56,4 +56,10 @@ dependencies {
     implementation "androidx.compose.ui:ui-tooling:$compose"
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose"
+
+
+    // Koin for Kotlin apps
+    implementation "io.insert-koin:koin-core:$koin"
+    // Testing
+    testImplementation "io.insert-koin:koin-test:$koin"
 }

@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -49,7 +50,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-
     //compose
     implementation "androidx.activity:activity-compose:1.4.0"
     implementation "androidx.compose.material:material:$compose"
@@ -64,4 +64,18 @@ dependencies {
     implementation "io.insert-koin:koin-android:$koin"
     // Testing
     testImplementation "io.insert-koin:koin-test:$koin"
+
+    implementation("androidx.room:room-runtime:$room")
+    annotationProcessor("androidx.room:room-compiler:$room")
+
+//    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room")
+//    // To use Kotlin Symbolic Processing (KSP)
+//    ksp("androidx.room:room-compiler:$room")
+
+    // optional - Test helpers
+    testImplementation("androidx.room:room-testing:$room")
+
+    // optional - Paging 3 Integration
+    implementation("androidx.room:room-paging:2.5.0-alpha01")
 }

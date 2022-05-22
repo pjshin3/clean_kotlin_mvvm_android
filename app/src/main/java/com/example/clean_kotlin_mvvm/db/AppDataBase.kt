@@ -5,8 +5,10 @@ import androidx.room.DatabaseConfiguration
 import androidx.room.InvalidationTracker
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteOpenHelper
+import com.example.clean_kotlin_mvvm.db.dao.SampleDao
 import com.example.clean_kotlin_mvvm.entity.SampleEntity
 
 @Database(entities = [SampleEntity::class], version = 1)
 abstract class AppDataBase: RoomDatabase(){
+    abstract fun getSampleDao(): SampleDao
 }

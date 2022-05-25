@@ -75,4 +75,6 @@ dependencies {
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$navigation")
     androidTestImplementation("androidx.navigation:navigation-testing:$navigation")
     implementation("androidx.navigation:navigation-compose:$navigation")
+    //fragment
+    implementation("androidx.fragment:fragment-ktx:$fragment")
 }

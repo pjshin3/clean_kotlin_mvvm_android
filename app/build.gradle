@@ -59,24 +59,20 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose"
 
-
-    // Koin for Kotlin apps
+    //koin
     implementation "io.insert-koin:koin-core:$koin"
     implementation "io.insert-koin:koin-android:$koin"
-    // Testing
     testImplementation "io.insert-koin:koin-test:$koin"
-
+    //room
     implementation("androidx.room:room-runtime:$room")
     annotationProcessor("androidx.room:room-compiler:$room")
-
-//    // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$room")
-//    // To use Kotlin Symbolic Processing (KSP)
-//    ksp("androidx.room:room-compiler:$room")
-
-    // optional - Test helpers
     testImplementation("androidx.room:room-testing:$room")
-
-    // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:2.5.0-alpha01")
+    //navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:$navigation")
+    implementation("androidx.navigation:navigation-ui-ktx:$navigation")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$navigation")
+    androidTestImplementation("androidx.navigation:navigation-testing:$navigation")
+    implementation("androidx.navigation:navigation-compose:$navigation")
 }

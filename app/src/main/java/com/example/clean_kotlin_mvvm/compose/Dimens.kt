@@ -1,4 +1,4 @@
-package com.example.clean_kotlin_mvvm.view
+package com.example.clean_kotlin_mvvm.compose
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.dimensionResource

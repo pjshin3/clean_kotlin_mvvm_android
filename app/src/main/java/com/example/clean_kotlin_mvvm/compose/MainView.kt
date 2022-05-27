@@ -13,11 +13,14 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
 
 
 @Preview
 @Composable
 fun MainScreen(){
+    val controller = rememberNavController()
+
 
     var isVisible by remember { mutableStateOf(true) }
     val focusRequest = remember { FocusRequester() }

@@ -1,16 +1,13 @@
 package com.example.clean_kotlin_mvvm
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.navigation.compose.rememberNavController
-import com.example.clean_kotlin_mvvm.viewmodel.MainViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.appcompat.app.AppCompatActivity
+import com.example.clean_kotlin_mvvm.databinding.ActivityMainBinding
+import androidx.databinding.DataBindingUtil.setContentView
 
-class MainActivity : ComponentActivity() {
-
-    private val viewModel by viewModel<MainViewModel>(owner = this)
-
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView<ActivityMainBinding>(this, R.layout.activity_main)
     }
 }

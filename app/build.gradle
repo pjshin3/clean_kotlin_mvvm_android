@@ -77,4 +77,9 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:$navigation")
     //fragment
     implementation("androidx.fragment:fragment-ktx:$fragment")
+
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
 }

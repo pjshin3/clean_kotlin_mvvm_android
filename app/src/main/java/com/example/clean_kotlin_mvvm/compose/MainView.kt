@@ -1,12 +1,15 @@
 package com.example.clean_kotlin_mvvm.compose
 
+import android.widget.Toolbar
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.ClickableText
-import androidx.compose.material.Text
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -15,6 +18,7 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.rememberNavController
 
 
@@ -51,4 +55,19 @@ fun MainScreen(){
 
 
 
+}
+
+
+@Preview
+@Composable
+fun MyToolBar(){
+    Column {
+        TopAppBar(
+            elevation = 4.dp,
+            backgroundColor = MaterialTheme.colors.primaryVariant,
+        ){
+
+        }
+
+    }
 }

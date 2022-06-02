@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import com.example.clean_kotlin_mvvm.compose.MainScreen
+import com.example.clean_kotlin_mvvm.compose.MyToolBar
 
 class UserListFragment: Fragment() {
 
@@ -17,7 +18,8 @@ class UserListFragment: Fragment() {
     ): View? {
         return ComposeView(requireContext()).also {
             it.setContent {
-                MainScreen()
+
+                //MainScreen()
             }
         }
     }

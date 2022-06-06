@@ -19,7 +19,6 @@ class UserListFragment: Fragment() {
         return ComposeView(requireContext()).also {
             it.setContent {
 
-                //MainScreen()
             }
         }
     }

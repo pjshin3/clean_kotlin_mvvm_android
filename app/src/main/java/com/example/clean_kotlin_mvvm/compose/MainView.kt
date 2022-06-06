@@ -56,18 +56,3 @@ fun MainScreen(){
 
 
 }
-
-
-@Preview
-@Composable
-fun MyToolBar(){
-    Column {
-        TopAppBar(
-            elevation = 4.dp,
-            backgroundColor = MaterialTheme.colors.primaryVariant,
-        ){
-
-        }
-
-    }
-}
